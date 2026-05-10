@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🌴ЯлтаВПН - Курортный ВПН</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background: #121212;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            color: #ffffff;
+            padding: 20px;
+        }
+
+        .logo-container {
+            text-align: center;
+            margin-bottom: 10px;
+        }
+
+        .logo-container img {
+            width: 120px;
+            height: 120px;
+            object-fit: contain;
+            margin-bottom: 10px;
+            border-radius: 30px;
+            box-shadow: 0 0 20px rgba(165, 214, 167, 0.8);
+        }
+
+        .logo-container h1 {
+            font-size: 26px;
+            font-weight: 700;
+            color: #a5d6a7;
+        }
+
+        .links {
+            display: flex;
+            gap: 40px;
+            margin: 15px 0 25px;
+        }
+
+        .links a {
+            color: #a5d6a7;
+            text-decoration: none;
+            font-size: 16px;
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+
+        .links a:hover {
+            color: #ffffff;
+        }
+
+        .info-card {
+            background: #1e1e1e;
+            border-radius: 24px;
+            padding: 30px 25px 25px;
+            max-width: 420px;
+            width: 100%;
+            box-shadow: 0 8px 24px rgba(0, 0, 0, 0.6);
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+            cursor: pointer;
+            position: relative;
+            margin-bottom: 25px;
+        }
+
+        .info-card:active {
+            transform: scale(0.97);
+            box-shadow: 0 4px 12px rgba(165, 214, 167, 0.3);
+        }
+
+        .badge {
+            position: absolute;
+            top: -12px;
+            left: 20px;
+            background: #a5d6a7;
+            color: #121212;
+            font-weight: 700;
+            font-size: 14px;
+            padding: 5px 14px;
+            border-radius: 20px;
+            display: flex;
+            align-items: center;
+            gap: 6px;
+        }
+
+        .badge .crown {
+            font-size: 16px;
+        }
+
+        .info-title {
+            text-align: center;
+            font-size: 18px;
+            font-weight: 600;
+            color: #e0e0e0;
+            margin: 10px 0 20px;
+        }
+
+        .subscribe-btn {
+            display: block;
+            width: 100%;
+            background: #a5d6a7;
+            color: #121212;
+            border: none;
+            padding: 14px;
+            border-radius: 14px;
+            font-size: 18px;
+            font-weight: 700;
+            text-align: center;
+            text-decoration: none;
+            transition: background 0.3s, transform 0.1s;
+            margin-top: 10px;
+        }
+
+        .subscribe-btn:hover {
+            background: #c8e6c9;
+        }
+
+        .subscribe-btn:active {
+            transform: scale(0.96);
+        }
+
+        .additional-btn {
+            display: block;
+            width: 100%;
+            background: transparent;
+            color: #a5d6a7;
+            border: 2px solid #a5d6a7;
+            padding: 12px;
+            border-radius: 14px;
+            font-size: 16px;
+            font-weight: 600;
+            text-align: center;
+            text-decoration: none;
+            margin-top: 12px;
+            transition: background 0.3s;
+        }
+
+        .additional-btn:hover {
+            background: rgba(165, 214, 167, 0.1);
+        }
+    </style>
+</head>
+<body>
+    <div class="logo-container">
+        <!-- ЗАМЕНИ НА СВОЙ ЛОГОТИП -->
+        <img src="1000058597.jpg" alt="ЯлтаВПН">
+        <h1>🌴ЯлтаВПН - Курортный ВПН</h1>
+    </div>
+
+    <div class="links">
+        <a href="https://t.me/PartiyaSosisok" target="_blank">Поддержка</a>
+        <a href="https://t.me/YaltaVPN_Obxod" target="_blank">Канал</a>
+    </div>
+
+    <div class="info-card" onclick="this.classList.toggle('pressed')">
+        <div class="badge">
+            <span class="crown">👑</span> Полностью бесплатно
+        </div>
+        <div class="info-title">
+            Обход блокировок от 🌴ЯлтаВПН
+        </div>
+        <a href="https://raw.githubusercontent.com/YaltaVPN/YaltaVPNConfigs/6eeeed08502935df47c6f62d5c14ffd66df9b1a8/YaltaVPN.txt" 
+           class="subscribe-btn" target="_blank">
+            Подписка
+        </a>
+        <!-- При необходимости добавишь другие кнопки позже -->
+    </div>
+</body>
+</html>
